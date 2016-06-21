@@ -1,0 +1,70 @@
+﻿@model UCRMS_Version2.Models.Course
+
+@{
+    ViewBag.Title = "Unassign All Courses";
+}
+<link href="~/Scripts/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet" />
+<h2>Unassign All Courses</h2>
+<style>
+    .ui-dialog > .ui-widget-header {
+        background: #B94A48;
+    }
+
+    .no-close .ui-dialog-titlebar-close {
+        display: none;
+    }
+</style>
+
+@using (Html.BeginForm("Unassign", "Course", FormMethod.Post, new { Id = "unassignCourseForm" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-10">
+                <input type="button" onclick="submitForm()" value="Unassign" id="unassignButton" name="unassignButton" class="btn btn-danger" />
+            </div>
+        </div>
+
+        <div class="form-group" id="message">
+            <div class="col-md-offset-2 col-md-10" style="color: GREEN">
+                @ViewBag.SuccessMessage
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("View Course Statistics", "Statistics")
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#message').delay(10000).fadeOut();
+        });
+    </script>
+    <script>
+        function submitForm()
+        {
+            var x = "Are you sure you want to Unassign All Courses?";
+            $('<div title="Confirm">' + x + '</div>').dialog({
+                dialogClass: "no-close",
+                width: 350,
+                modal: true,
+                resizable: false,
+                closeOnEscape: false,
+                buttons: {
+                    "Yes": function () {
+                        document.getElementById("unassignCourseForm").submit();
+                        $(this).dialog("close");
+                    },
+                    "No": function () {
+                        $(this).dialog("close").slideUp();
+                    }
+                }
+            });
+        }
+    </script>
+}

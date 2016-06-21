@@ -1,0 +1,172 @@
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\csc.exe
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\vbc.exe
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\UCRMS-Version2.dll.config
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\UCRMS-Version2.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\UCRMS-Version2.pdb
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Antlr3.Runtime.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.SqlServer.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Newtonsoft.Json.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Owin.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Helpers.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Mvc.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Optimization.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Razor.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\WebGrease.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Newtonsoft.Json.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Helpers.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Mvc.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Optimization.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Razor.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Antlr3.Runtime.pdb
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.SqlServer.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version1DepartmentCourseTeacherSemesterDesignationModelAdded.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version2MadeTeacherIdPropertyNullableInCourseModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version3.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version2AddedRemainingCreditToTeacherModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version4AddCourseStatisticsModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version5.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.csproj.GenerateResource.Cache
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.pdb
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.csprojResolveAssemblyReference.cache
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddStudentModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddRoomModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddAllocateClassroomModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.ReshufflingInModelNames.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddedRelationshipsBetweenClassroomAndOthers.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version6MadeRemainigCreditFromTeacherNotMapped.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddedStudentCourseMTMRelationship.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version7AddedGradeModel.resources
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\itextsharp.dll
+C:\Users\Kamlesh Thakur\documents\visual studio 2015\Projects\UCRMS-Version2\UCRMS-Version2\bin\itextsharp.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\csc.exe
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\System.Collections.Immutable.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\System.Reflection.Metadata.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\vbc.exe
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\VBCSCompiler.exe
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\roslyn\VBCSCompiler.exe.config
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\UCRMS-Version2.dll.config
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\UCRMS-Version2.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\UCRMS-Version2.pdb
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Antlr3.Runtime.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.SqlServer.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\itextsharp.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Core.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Cookies.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Facebook.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Google.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.OAuth.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Twitter.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Web.Infrastructure.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Newtonsoft.Json.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Owin.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Helpers.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Mvc.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Optimization.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Razor.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Deployment.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Razor.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\WebGrease.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\itextsharp.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Newtonsoft.Json.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Helpers.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Mvc.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Optimization.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.Razor.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Deployment.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\System.Web.WebPages.Razor.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Antlr3.Runtime.pdb
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\EntityFramework.SqlServer.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Core.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Facebook.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Cookies.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.OAuth.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Google.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.Twitter.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.csprojResolveAssemblyReference.cache
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version1DepartmentCourseTeacherSemesterDesignationModelAdded.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version2MadeTeacherIdPropertyNullableInCourseModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version3.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version2AddedRemainingCreditToTeacherModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version4AddCourseStatisticsModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version5.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddStudentModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddRoomModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddAllocateClassroomModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.ReshufflingInModelNames.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddedRelationshipsBetweenClassroomAndOthers.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version6MadeRemainigCreditFromTeacherNotMapped.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.AddedStudentCourseMTMRelationship.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS_Version2.Migrations.Version7AddedGradeModel.resources
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.csproj.GenerateResource.Cache
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.dll
+F:\1\UCRMS-Version2\UCRMS-Version2\obj\Debug\UCRMS-Version2.pdb

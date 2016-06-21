@@ -1,0 +1,65 @@
+﻿@model UCRMS_Version2.Models.Classroom
+
+@{
+    ViewBag.Title = "Unallocate Classrooms";
+}
+<link href="~/Scripts/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet" />
+<h2>Unallocate Classrooms</h2>
+<style>
+    .ui-dialog > .ui-widget-header {background:  #B94A48;}
+    .no-close .ui-dialog-titlebar-close { display: none; }
+</style>
+
+@using (Html.BeginForm("Unallocate", "Classroom", FormMethod.Post, new { Id = "unallocateClassroomForm" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-10">
+                <input type="button" onclick="submitForm()" value="Unallocate" id="unallocateButton" name="unallocateButton" class="btn btn-danger" />
+            </div>
+        </div>
+
+        <div class="form-group" id="message">
+            <div class="col-md-offset-2 col-md-10" style="color: GREEN">
+                @ViewBag.SuccessMessage
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("View Class Schedule and Room Allocation Information", "ScheduleInformation")
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $('#message').delay(10000).fadeOut();
+            });
+    </script>
+    <script>
+        function submitForm()
+        {
+            var x = "Are you sure you want to Unallocate All Rooms?";
+                $('<div title="Confirm">' + x + '</div>').dialog({
+                    dialogClass: "no-close",
+                    width: 350,
+                    modal: true,
+                    resizable: false,
+                    closeOnEscape: false,
+                    buttons: {
+                        "Yes": function () {
+                            document.getElementById("unallocateClassroomForm").submit();
+                            $(this).dialog("close");
+                        },
+                        "No": function () {
+                            $(this).dialog("close").slideUp();
+                        }
+                    }
+                });
+        }
+    </script>
+}

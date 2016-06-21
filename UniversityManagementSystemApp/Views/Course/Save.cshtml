@@ -1,0 +1,134 @@
+﻿@model UCRMS_Version2.Models.Course
+
+@{
+    ViewBag.Title = "Save Course";
+}
+<style>
+    label.error, .messageLabel {
+        color: #B94A48;
+        font-style: normal;
+        font-family: Helvetica;
+        font-size: 12px;
+    }
+</style>
+<h2>Save Course</h2>
+
+
+@using (Html.BeginForm("Save","Course", FormMethod.Post, new {Id="saveCourseForm"}))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Code, "Code", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control", @placeholder = "Course Code", @id="Code", @name="Name" } })
+                @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, "Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Course Name", @id="Name", @name="Name" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Credit, "Credit", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Credit, new { htmlAttributes = new { @class = "form-control", @placeholder = "Course Credit", @Id="Credit", @name="Credit" } })
+                @Html.ValidationMessageFor(model => model.Credit, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, "Description", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, htmlAttributes: new { @class = "form-control", @placeholder = "Course Description", @id="Description", @name="Description" })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DepartmentId, "Department", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <select class="form-control" id="DepartmentId" name="DepartmentId">
+                    <option value="">--Select a Department--</option>
+                    @foreach (var departmentList in ViewBag.Departments)
+                    {
+                        <option value="@departmentList.Id">@departmentList.Name</option>
+                    }
+                </select>
+                @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SemesterId, "Semester", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <select class="form-control" id="SemesterId" name="SemesterId">
+                    <option value="">--Select a Semester--</option>
+                    @foreach (var semester in ViewBag.Semesters)
+                    {
+                        <option value="@semester.Id">@semester.Name</option>
+                    }
+                </select>
+                @Html.ValidationMessageFor(model => model.SemesterId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-success"/>
+            </div>
+        </div>
+
+        <div class="form-group" id="message">
+            <div class="col-md-offset-2 col-md-10" style="color: GREEN">
+                <label>@ViewBag.SuccessMessage</label>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#message').delay(10000).fadeOut();
+            $('#Code').val("");
+            $('#Name').val("");
+            $('#Credit').val("");
+            $('#Description').val("");
+
+            $("#saveCourseForm").validate({
+                rules: {
+                    SemesterId: "required",
+                    DepartmentId: "required"
+
+                },
+                messages: {
+                    SemesterId: "Please select a Department",
+                    DepartmentId: "Please select a Semester"
+                }
+            });
+        });
+            document.getElementById("Name").onkeypress = function (e) {
+                var e = window.event || e;
+                var keyunicode = e.charCode || e.keyCode;
+                return (keyunicode >= 65 && keyunicode <= 90 || keyunicode >= 96 && keyunicode <= 122 || keyunicode == 8 || keyunicode == 32 || keyunicode == 39 || keyunicode == 46) ? true : false;
+            },
+                document.getElementById("Credit").onkeypress = function (e) {
+                    var e = window.event || e;
+                    var keyunicode = e.charCode || e.keyCode;
+                    return (keyunicode >= 48 && keyunicode <= 57 || keyunicode == 8 || keyunicode == 46) ? true : false;
+                }
+    </script>
+}

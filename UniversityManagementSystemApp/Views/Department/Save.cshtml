@@ -1,0 +1,68 @@
+﻿@model UCRMS_Version2.Models.Department
+
+@{
+    ViewBag.Title = "Save Department";
+}
+
+<h2>Save Department</h2>
+
+
+@using (Ajax.BeginForm("Save", "Department", new AjaxOptions() { HttpMethod = "POST", OnBegin = "ClearNotificationMessage" }, new { enctype = "multipart/form-data", id = "registerStudentForm" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Code, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control", @placeholder="Department Code", @id="Code", @name="Code" } })
+                @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Department Name", @id="Name", @name="Name" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-success"/>
+            </div>
+        </div>
+
+        <div class="form-group" id="message">
+            <div class="col-md-offset-2 col-md-10" style="color: GREEN">
+                <label>@ViewBag.SuccessMessage</label>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to View All Departments", "ViewAll")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#Code').val("");
+            $('#Name').val("");
+            $('#message').delay(10000).fadeOut();
+        });
+    </script>
+    <script>
+        document.getElementById("Name").onkeypress = function (e) {
+            var e = window.event || e;
+            var keyunicode = e.charCode || e.keyCode;
+            return (keyunicode >= 65 && keyunicode <= 90 || keyunicode >= 96 && keyunicode <= 122 || keyunicode == 8 || keyunicode == 32 || keyunicode == 39 || keyunicode == 46) ? true : false;
+        }
+    </script>
+}

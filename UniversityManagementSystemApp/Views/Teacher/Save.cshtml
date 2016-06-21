@@ -1,0 +1,113 @@
+﻿@model UCRMS_Version2.Models.Teacher
+
+@{
+    ViewBag.Title = "Save Teacher";
+}
+
+<h2>Save Teacher</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @id="Name", @name="Name" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Address, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContactNo, "Contact No.", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ContactNo, new { htmlAttributes = new { @class = "form-control", @id="ContactNo", @name="ContactNo" } })
+                @Html.ValidationMessageFor(model => model.ContactNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DesignationId, "Designation", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.DesignationId, new SelectList(ViewBag.Designations, "Id", "Name"), "--Select a Designation--", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DesignationId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DepartmentId, "Department", htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.DepartmentId, new SelectList(ViewBag.Departments, "Id", "Name"), "--Select a Department--", htmlAttributes: new {@class = "form-control"})
+                @Html.ValidationMessageFor(model => model.DepartmentId, "", new {@class = "text-danger"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreditToBeTaken, "Credit to be taken", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CreditToBeTaken, new { htmlAttributes = new { @class = "form-control", @id="CreditToBeTaken", @name= "CreditToBeTaken" } })
+                @Html.ValidationMessageFor(model => model.CreditToBeTaken, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-success"/>
+            </div>
+        </div>
+
+        <div class="form-group" id="message">
+            <div class="col-md-offset-2 col-md-10" style="color: GREEN">
+                <label>@ViewBag.SuccessMessage</label>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#message').delay(10000).fadeOut();
+        });
+    </script>
+    <script>
+        document.getElementById("Name").onkeypress = function(e) {
+                var e = window.event || e;
+                var keyunicode = e.charCode || e.keyCode;
+                return (keyunicode >= 65 && keyunicode <= 90 || keyunicode >= 96 && keyunicode <= 122 || keyunicode == 8 || keyunicode == 32 || keyunicode == 39 || keyunicode == 46) ? true : false;
+            },
+            document.getElementById("ContactNo").onkeypress = function (e) {
+                var e = window.event || e;
+                var keyunicode = e.charCode || e.keyCode;
+                return (keyunicode >= 48 && keyunicode <= 57 || keyunicode == 8 || keyunicode == 43) ? true : false;
+            },
+            document.getElementById("CreditToBeTaken").onkeypress = function (e) {
+                var e = window.event || e;
+                var keyunicode = e.charCode || e.keyCode;
+                return (keyunicode >= 48 && keyunicode <= 57 || keyunicode == 8 || keyunicode == 46) ? true : false;
+            }
+    </script>
+}

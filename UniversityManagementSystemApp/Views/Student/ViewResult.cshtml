@@ -1,0 +1,153 @@
+﻿@model UCRMS_Version2.Models.Student
+
+@{
+    ViewBag.Title = "View Result";
+}
+<h2>View Result</h2>
+<link href="~/Content/bootstrap-datepicker.min.css" rel="stylesheet" />
+<style>
+    label.error, .messageLabel {
+        color: #B94A48;
+        font-style: normal;
+        font-family: Helvetica;
+        font-size: 12px;
+    }
+</style>
+@using (Html.BeginForm("ViewResult", "Student", FormMethod.Post, new {Id = "viewResultForm"}))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr/>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Id, "Student Reg. No.", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("StudentId", null, "--Select Student--", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @disabled = "disabled", @readonly = "readonly", @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @disabled = "disabled", @readonly = "readonly", @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Department", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.Editor("DepartmentCode", new { htmlAttributes = new { @disabled = "disabled", @readonly = "readonly", @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input id="submit" name="submit" type="submit" value="Make PDF" class="btn btn-success"/>
+                     @*@Html.ActionLink("Make PDF" , "PrintResult")*@
+                </div>
+            </div>
+        <div class="form-group">
+            <table class="table" border="1" id="myTable">
+                <thead bgcolor="lightgray">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Course Code")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Name")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Grade")
+                    </th>
+
+                </tr>
+                </thead>
+                <tbody id="tableBody" name="tableBody">
+                <tr id="tableRow" name="tableRow"></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-group" id="message">
+            <div class="col-md-offset-2 col-md-10" style="color: GREEN">
+                <label>@ViewBag.SuccessMessage</label>
+            </div>
+        </div>
+
+    </div>
+}
+
+@section scripts
+{
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#message').delay(20000).fadeOut();
+            $("#viewResultForm").validate({
+                rules: {
+                    StudentId: "required"
+                },
+                messages: {
+                    StudentId: "Please select a Student"
+                }
+            });
+
+            $("#StudentId").change(function () {
+                var stdntId = $("#StudentId").val();
+                $("#Name").val("");
+                $("#Email").val("");
+                $("#DepartmentCode").val("");
+                var json = { studentId: stdntId };
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GetStudentInfoByStudentId", "Student")',
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(json),
+                    datatype: 'json',
+                    success: function (data) {
+                        $.each(data, function (i, value) {
+                            $("#Name").val(value.name);
+                            $("#Email").val(value.email);
+                            $("#DepartmentCode").val(value.department);
+                        });
+                    }
+                });
+            });
+
+            $("#StudentId").change(function () {
+
+                var stdntId = $("#StudentId").val();
+                $("#myTable").empty();
+                var json = { studentId: stdntId};
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GetCourseResultInfoByStudentId", "Student")',
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(json),
+                    datatype: 'json',
+                    success: function (data) {
+                        $('#myTable').append('<thead bgcolor="lightgray"><tr><th>' + "Course Code" + '</th><th>' + "Name" + '</th><th>' + "Grade" + '</th></tr> </thead>');
+                        $.each(data, function (i, value) {
+                            $("#myTable").append('<tr><td>' + value.code + '</td><td>' + value.name + '</td><td>' + value.grade + '</td></tr>');
+                        });
+                    },
+                    error: function (ex) {
+                        alert('Failed to retrieve Course Result' + ex);
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+
+

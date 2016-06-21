@@ -1,0 +1,80 @@
+﻿@using System.Web.UI.WebControls
+@model UCRMS_Version2.Models.Classroom
+
+@{
+    ViewBag.Title = "View Class Schedule and Room Allocation Info";
+}
+<p>
+    @Html.ActionLink("Allocate Another Classroom", "Allocate")
+</p>
+
+<h2>View Class Schedule and Room Allocation Info</h2>
+
+@using (Html.BeginForm("ScheduleInformation", "Classroom", FormMethod.Post, new { Id = "roomAllocationInfoForm" }))
+{
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.DepartmentId, "Department", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.DepartmentId, new SelectList(ViewBag.Departments, "Id", "Name"), "--Select a Department--", htmlAttributes: new { @class = "form-control", @id = "departmentId", @name = "departmentId" })
+                @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <hr />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <table class="table" id="scheduleInformation" name="scheduleInformation">
+                    <tr>
+                        <th>
+                            @Html.DisplayName("Course Code")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Name")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Schedule Info")
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $("#departmentId").change(function () {
+            var deptId = $("#departmentId").val();
+            var json = { departmentId: deptId };
+            $('#scheduleInformation').empty();
+            var previousValue = "";
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetRoomAllocationInfoList", "Classroom")',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(json),
+                success: function (data) {                 
+                    $('#scheduleInformation').append('<tr><th>' + "Course Code" + '</th><th>' + "Name" + '</th><th>' + "Schedule Info" + '</th></tr>');
+                    $.each(data, function (key, value) {
+                        if (value.RoomName == "") {
+                            value.RoomName = "Not Scheduled Yet";
+                            $("#scheduleInformation").append('<tr><td>' + value.Code + '</td><td>' + value.Name + '</td><td>' + value.RoomName + '</td></tr>');
+                        }
+                        else
+                        {
+                            if (previousValue != value.Code) {
+                                $("#scheduleInformation").append('<tr><td>' + value.Code + '</td><td>' + value.Name + '</td><td>R. No : ' + value.RoomName + ', ' + value.Day + ', ' + value.ClassStartFrom + " - " + value.ClassEndAt);
+                            } else {
+                                $("#scheduleInformation td:eq(2)").append('<br/>R. No : ' + value.RoomName + ', ' + value.Day + ', ' + value.ClassStartFrom + " - " + value.ClassEndAt);
+                            }
+                            previousValue = value.Code;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

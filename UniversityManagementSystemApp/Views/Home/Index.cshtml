@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<style>
+    #myCarousel {
+        width: 100%;
+        height: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+    #over img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+<div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/Images/Slide1.jpeg" class="img-responsive">
+        </div>
+        <div class="item">
+            <img src="/Images/Slide2.jpg" class="img-responsive">
+        </div>
+        <div class="item">
+            <img src="/Images/Slide3.jpeg" class="img-responsive">
+        </div>
+        <div class="item">
+            <img src="/Images/Slide4.jpg" class="img-responsive">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span></a>
+</div>
+<div class="container-fluid navbar-default">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2 style="margin-left: 10px">Address</h2>
+            <p style="text-align: justify; margin-left: 10px">
+                BDBL Bhaban (5th Floor - West), 12,<br> Kazi Nazrul Islam Ave,<br> Dhaka 1215, Bangladesh<br/>Phone:+880 9612-322747
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <ul class="list-group" style="margin-top: 25px">
+                <li class="list-group-item"><a href="https://www.facebook.com/BASIS.BITM/">Facebook</a></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/BASIS.BITM/">Twitter</a></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/BASIS.BITM/">Youtube</a></li>
+            </ul>
+        </div>
+        <div id="over" class="col-sm-4" style="text-align: center">
+            <div class="text-center">
+                <img src="/Images/CyberDawnLogo.png" class="img-responsive" style="margin-top: 25px" width="180" />
+            </div>
+        </div>
+    </div>
+</div>

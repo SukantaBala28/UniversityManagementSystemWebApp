@@ -1,0 +1,79 @@
+﻿@model UCRMS_Version2.Models.CourseStatistics
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>View Course Statistics</h2>
+
+@using (Html.BeginForm("Statistics", "Course", FormMethod.Post, new { Id = "courseStatForm" }))
+{
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.Label("Department", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <select class="form-control" id="departmentId" name="departmentId">
+                    <option value="">--Select a Department--</option>
+                    @foreach (var departmentList in ViewBag.Departments)
+                    {
+                        <option value="@departmentList.Id">@departmentList.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <b>Course Information</b>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <table class="table" id="courseInformation" name="courseInformation">
+                    <tr>
+                        <th>
+                            @Html.DisplayName("Code")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Name/Title")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Semester")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Assigned To")
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $("#departmentId").change(function () {
+            var deptId = $("#departmentId").val();
+            var json = { departmentId: deptId };
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetCourseStatistics", "Course")',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(json),
+                success: function (data) {
+                    $('#courseInformation').empty();
+                    $('#courseInformation').append('<tr><th>' + "Code" + '</th><th>' + "Name/Title" + '</th><th>' + "Semester" + '</th><th>' + "Assigned To" + '</th></tr>');
+                    $.each(data, function (key, value) {
+                        if (value.AssignedTo == "") {
+                            value.AssignedTo = "Not Assigned Yet";
+                        }
+                        $("#courseInformation").append('<tr><td>'+value.Code+'</td><td>'+value.Name+'</td><td>'+value.Semester+'</td><td>'+value.AssignedTo+'</td></tr>');
+                    });
+                }
+            });
+        });
+    </script>
+}

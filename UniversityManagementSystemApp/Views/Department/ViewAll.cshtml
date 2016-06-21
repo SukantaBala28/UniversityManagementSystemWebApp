@@ -1,0 +1,33 @@
+﻿@model IEnumerable<UCRMS_Version2.Models.Department>
+
+@{
+    ViewBag.Title = "View All Departments";
+}
+
+<h2>View All Departments</h2>
+
+<p>
+    @Html.ActionLink("Save New", "Save")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+    </tr>
+}
+
+</table>
